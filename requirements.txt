@@ -1,6 +1,28 @@
-Flask>=2.1.0
-Werkzeug<2.1.0
-socketio.run(app, host='0.0.0.0', port=5000, allow_unsafe_werkzeug=True)
-python-dotenv
-gunicorn
+# Core dependencies
+flask==3.0.0                      # Flask web framework
+flask-socketio==5.3.6             # Flask-SocketIO for WebSocket support
+python-socketio==5.11.0           # Underlying Socket.IO support
+
+# Async support (choose one based on your setup)
+eventlet==0.33.3                  # Eventlet for async support
+# gevent==23.9.1                  # Optional: Use gevent for async support
+# gevent-websocket==0.10.1        # Optional: Gevent WebSocket support
+
+# Production WSGI server
+gunicorn==21.2.0                  # Production-ready WSGI server
+
+# Development tools
+flask-debugtoolbar==0.13.1        # Debug toolbar for Flask
+ipython==8.21.0                   # Interactive Python shell for testing
+python-dotenv==1.0.1              # Load environment variables
+
+# Optional dependencies
+requests==2.31.0                  # For making HTTP requests (if needed)
+pytest==8.1.1                     # Testing framework
+black==24.3.0                     # Code formatter
+flask-cors==4.0.1                 # Enable Cross-Origin Resource Sharing
+
+# General WebSocket dependencies (if required)
+websocket-client==1.8.0           # WebSocket client support
+
 
