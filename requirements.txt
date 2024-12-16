@@ -1,6 +1,6 @@
 Flask>=2.1.0
 Werkzeug<2.1.0
-allow_unsafe_werkzeug=True 
+allow_unsafe_werkzeug
 flask-socketio
 python-dotenv
 gunicorn
